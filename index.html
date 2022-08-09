@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser rendenizada-->
+<html lang="pt-br">
+<head>
+<title>Theme Switcher</title>
+<meta charset="utf-8">
+<meta name="author" content="Sarah Alves de Sá">
+<meta name="description" content="Teme Switcher">
+<meta name="keywords" content="JavaScript, tecnologia">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="imagens/moon.svg" alt="Imagem de lua">
+            <img src="imagens/sun.svg" alt="Imagem de sol">
+        </div>
+        <div class="container-toggle" onclick="temeSwitch()"></div>
+    </div>
+<script>
+    function temeSwitch(){
+        let  toggle = document.querySelector(".container-toggle");
+        let container = document.querySelector(".container");
+        let body =  document.querySelector("body");
+
+        if(toggle.style.marginLeft == "2px" || toggle.style.marginLeft == ""){
+            toggle.style.marginLeft = "52px" 
+            body.style.background = "#292C35" 
+        }else{
+            toggle.style.marginLeft = "2px"
+            body.style.background = "white"
+        };
+    };
+</script>
+</body>

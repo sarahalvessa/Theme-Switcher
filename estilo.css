@@ -1,0 +1,37 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition:all ease .3s;
+}
+.container{
+    height: 40px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: black;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
+}
+.container-toggle{
+    background-color: white;
+    display: flex;
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    margin-top: -38px;
+    margin-left: 2px;
+    position: absolute;
+    transition: all ease .3s;
+    cursor: pointer;
+}
